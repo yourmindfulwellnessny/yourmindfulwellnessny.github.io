@@ -157,16 +157,17 @@ header{position:sticky;top:0;z-index:50;background:rgba(253,251,248,.96);backdro
 
 /* programa continuo */
 .onb{background:var(--cream)}
-.onb-card{display:grid;grid-template-columns:1fr 1.05fr;background:var(--white);border-radius:30px;overflow:hidden;box-shadow:0 24px 50px rgba(78,26,56,.08)}
-.onb-ph{position:relative;min-height:420px}
+.onb-card{display:grid;grid-template-columns:1fr;background:var(--white);border-radius:30px;overflow:hidden;box-shadow:0 24px 50px rgba(78,26,56,.08)}
+.onb-ph{position:relative;aspect-ratio:1400/732}
 .onb-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
-.onb-tx{padding:56px 54px}
+.onb-tx{padding:48px 54px;display:grid;grid-template-columns:1.1fr 1fr;gap:48px;align-items:start}
+.onb ul{margin-top:0!important}
 .onb-tag{display:inline-block;background:var(--lilac);color:var(--wine);font:700 .68rem var(--display);letter-spacing:.18em;text-transform:uppercase;padding:8px 14px;border-radius:999px;margin-bottom:18px}
 .onb ul{list-style:none;margin:22px 0 28px;display:grid;gap:12px}
 .onb li{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start}
 .onb li i{font:800 .8rem var(--display);font-style:normal;color:var(--lav);border:1px solid var(--gold2);border-radius:50%;width:28px;height:28px;display:grid;place-items:center}
 .onb .why{font-size:.93rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-bottom:24px}
-@media (max-width:1080px){.onb-card{grid-template-columns:1fr}.onb-ph{min-height:300px}.onb-tx{padding:36px 28px}}
+@media (max-width:1080px){.onb-tx{grid-template-columns:1fr;gap:10px;padding:32px 26px}}
 
 /* charla insignia */
 .sig{background:var(--white)}
@@ -486,9 +487,12 @@ footer a:hover{color:var(--gold2)}
     <div class="onb-card rv">
       <div class="onb-ph"><img src="../img/mujeres-grupo.jpg" alt="Equipo de profesionales después de una capacitación" loading="lazy"></div>
       <div class="onb-tx">
+        <div>
         <span class="onb-tag"><span class="es">Programa continuo · Contrato trimestral</span><span class="en">Ongoing program · Quarterly contract</span></span>
         <h2><span class="es">Inducción de servicio y bienestar para nuevos empleados</span><span class="en">Service and well-being onboarding for new hires</span></h2>
         <p class="lead" style="margin-top:16px"><span class="es">Para hoteles, restaurantes, centros de salud y empresas de servicio que contratan personal todo el año. Cada nuevo grupo recibe la misma base de servicio, comunicación y bienestar, sin que tu equipo tenga que organizarlo.</span><span class="en">For hotels, restaurants, health centers and service companies that hire year-round. Every new group gets the same foundation in service, communication and well-being, without your team having to organize it.</span></p>
+        </div>
+        <div>
         <ul>
           <li><i>1</i><span><span class="es">Un taller de inducción cada trimestre, presencial o virtual</span><span class="en">One onboarding workshop every quarter, on-site or virtual</span></span></li>
           <li><i>2</i><span><span class="es">Guía del participante y materiales en inglés y en español</span><span class="en">Participant guide and materials in English and Spanish</span></span></li>
@@ -496,6 +500,7 @@ footer a:hover{color:var(--gold2)}
         </ul>
         <p class="why"><span class="es">El resultado: el personal nuevo empieza con los mismos estándares desde el primer día, y tú tienes un aliado de formación todo el año.</span><span class="en">The result: new staff start with the same standards from day one, and you have a training partner all year.</span></p>
         <a class="btn btn-wine" href="#contacto" data-topic="Programa de inducción continua"><span class="es">Pide información del programa continuo</span><span class="en">Ask about the ongoing program</span></a>
+        </div>
       </div>
     </div>
   </div>
