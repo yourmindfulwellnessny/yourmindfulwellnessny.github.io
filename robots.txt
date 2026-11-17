@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
+Disallow: /redes/
 Sitemap: https://www.mindfulbymonica.com/sitemap.xml
