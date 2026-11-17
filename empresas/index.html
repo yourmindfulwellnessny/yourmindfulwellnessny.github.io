@@ -155,6 +155,19 @@ header{position:sticky;top:0;z-index:50;background:rgba(253,251,248,.96);backdro
 .f small{display:block;font:600 .7rem var(--display);letter-spacing:.18em;text-transform:uppercase;color:#bfaab6;margin-bottom:12px}
 .f p{font-size:.95rem;color:#e6dbe1}
 
+/* programa continuo */
+.onb{background:var(--cream)}
+.onb-card{display:grid;grid-template-columns:1fr 1.05fr;background:var(--white);border-radius:30px;overflow:hidden;box-shadow:0 24px 50px rgba(78,26,56,.08)}
+.onb-ph{position:relative;min-height:420px}
+.onb-ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 40%}
+.onb-tx{padding:56px 54px}
+.onb-tag{display:inline-block;background:var(--lilac);color:var(--wine);font:700 .68rem var(--display);letter-spacing:.18em;text-transform:uppercase;padding:8px 14px;border-radius:999px;margin-bottom:18px}
+.onb ul{list-style:none;margin:22px 0 28px;display:grid;gap:12px}
+.onb li{display:grid;grid-template-columns:30px 1fr;gap:10px;align-items:start}
+.onb li i{font:800 .8rem var(--display);font-style:normal;color:var(--lav);border:1px solid var(--gold2);border-radius:50%;width:28px;height:28px;display:grid;place-items:center}
+.onb .why{font-size:.93rem;color:var(--muted);border-top:1px solid var(--line);padding-top:16px;margin-bottom:24px}
+@media (max-width:1080px){.onb-card{grid-template-columns:1fr}.onb-ph{min-height:300px}.onb-tx{padding:36px 28px}}
+
 /* charla insignia */
 .sig{background:var(--white)}
 .sig-grid{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
@@ -467,6 +480,27 @@ footer a:hover{color:var(--gold2)}
   </div>
 </section>
 
+<!-- PROGRAMA CONTINUO -->
+<section class="onb" id="continuo">
+  <div class="wrap">
+    <div class="onb-card rv">
+      <div class="onb-ph"><img src="../img/mujeres-grupo.jpg" alt="Equipo de profesionales después de una capacitación" loading="lazy"></div>
+      <div class="onb-tx">
+        <span class="onb-tag"><span class="es">Programa continuo · Contrato trimestral</span><span class="en">Ongoing program · Quarterly contract</span></span>
+        <h2><span class="es">Inducción de servicio y bienestar para nuevos empleados</span><span class="en">Service and well-being onboarding for new hires</span></h2>
+        <p class="lead" style="margin-top:16px"><span class="es">Para hoteles, restaurantes, centros de salud y empresas de servicio que contratan personal todo el año. Cada nuevo grupo recibe la misma base de servicio, comunicación y bienestar, sin que tu equipo tenga que organizarlo.</span><span class="en">For hotels, restaurants, health centers and service companies that hire year-round. Every new group gets the same foundation in service, communication and well-being, without your team having to organize it.</span></p>
+        <ul>
+          <li><i>1</i><span><span class="es">Un taller de inducción cada trimestre, presencial o virtual</span><span class="en">One onboarding workshop every quarter, on-site or virtual</span></span></li>
+          <li><i>2</i><span><span class="es">Guía del participante y materiales en inglés y en español</span><span class="en">Participant guide and materials in English and Spanish</span></span></li>
+          <li><i>3</i><span><span class="es">Informe trimestral de asistencia, evaluación y recomendaciones</span><span class="en">Quarterly report on attendance, assessment and recommendations</span></span></li>
+        </ul>
+        <p class="why"><span class="es">El resultado: el personal nuevo empieza con los mismos estándares desde el primer día, y tú tienes un aliado de formación todo el año.</span><span class="en">The result: new staff start with the same standards from day one, and you have a training partner all year.</span></p>
+        <a class="btn btn-wine" href="#contacto" data-topic="Programa de inducción continua"><span class="es">Pide información del programa continuo</span><span class="en">Ask about the ongoing program</span></a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- CHARLA INSIGNIA -->
 <section class="sig">
   <div class="wrap sig-grid">
@@ -597,6 +631,7 @@ footer a:hover{color:var(--gold2)}
               <option value="Bienestar del personal" data-en="Workforce well-being">Bienestar y resiliencia del personal</option>
               <option value="Liderazgo" data-en="Leadership">Liderazgo para equipos diversos</option>
               <option value="Desarrollo laboral" data-en="Workforce development design">Diseño de programas de desarrollo laboral</option>
+              <option value="Programa de inducción continua" data-en="Ongoing onboarding program">Programa de inducción continua (trimestral)</option>
               <option value="conferencia" data-en="Keynote / event speaker">Conferencia para un evento</option>
               <option value="No estoy seguro" data-en="Not sure yet">Aún no lo sé</option>
             </select>
@@ -623,7 +658,7 @@ footer a:hover{color:var(--gold2)}
       </div>
       <div>
         <h4><span class="es">Organizaciones</span><span class="en">Organizations</span></h4>
-        <ul><li><a href="#programas"><span class="es">Programas</span><span class="en">Programs</span></a></li><li><a href="#industrias"><span class="es">Industrias</span><span class="en">Industries</span></a></li><li><a href="#metodo"><span class="es">Cómo trabajamos</span><span class="en">How we work</span></a></li><li><a href="#contacto"><span class="es">Solicita una propuesta</span><span class="en">Request a proposal</span></a></li></ul>
+        <ul><li><a href="#programas"><span class="es">Programas</span><span class="en">Programs</span></a></li><li><a href="#industrias"><span class="es">Industrias</span><span class="en">Industries</span></a></li><li><a href="#continuo"><span class="es">Programa continuo</span><span class="en">Ongoing program</span></a></li><li><a href="#metodo"><span class="es">Cómo trabajamos</span><span class="en">How we work</span></a></li><li><a href="#contacto"><span class="es">Solicita una propuesta</span><span class="en">Request a proposal</span></a></li></ul>
       </div>
       <div>
         <h4><span class="es">Contacto</span><span class="en">Contact</span></h4>
