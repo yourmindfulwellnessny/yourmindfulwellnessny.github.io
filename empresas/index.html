@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Capacitación bilingüe para organizaciones · Mindful Wellness</title>
-<meta name="description" content="Programas de capacitación y bienestar en español e inglés para organizaciones de salud, servicios comunitarios, hospitalidad y atención al cliente que atienden o emplean a la comunidad hispana. NJ, NY y virtual.">
+<meta name="description" content="Programas de capacitación, liderazgo y bienestar en inglés y español para equipos de salud, servicios comunitarios, hospitalidad y atención al cliente. NJ, NY y virtual.">
 <meta property="og:title" content="Capacitación bilingüe para organizaciones · Mindful Wellness">
 <meta property="og:description" content="Programas en español e inglés que fortalecen el servicio, el liderazgo y el bienestar de tu equipo.">
 <meta property="og:image" content="https://www.mindfulbymonica.com/img/conferencia-grupo.jpg">
@@ -78,6 +78,18 @@ header{position:sticky;top:0;z-index:50;background:rgba(253,251,248,.96);backdro
 .h-text{padding:72px 56px 64px;display:flex;flex-direction:column;justify-content:center}
 .h-k{font:600 .72rem var(--display);letter-spacing:.26em;text-transform:uppercase;color:var(--gold2);margin-bottom:22px;display:flex;align-items:center;gap:12px}
 .h-k img{height:34px;width:auto}
+.h-text{position:relative;isolation:isolate}
+#neural{position:absolute;inset:0;width:100%;height:100%;z-index:-1;display:block;pointer-events:none}
+.h-top{display:flex;align-items:center;gap:18px;margin-bottom:26px}
+.h-top .h-k{margin:0}
+.brain{position:relative;width:84px;height:84px;flex:0 0 84px;display:grid;place-items:center}
+.brain img{width:58px;height:auto;position:relative;animation:brainIn 1.3s cubic-bezier(.2,.8,.2,1) both,float 6s ease-in-out 1.5s infinite}
+.ring{position:absolute;inset:0;border:1px solid rgba(253,251,248,.5);border-radius:50%;opacity:0;animation:ring 3.6s ease-out infinite}
+.ring.r2{animation-delay:1.2s}.ring.r3{animation-delay:2.4s}
+@keyframes ring{0%{transform:scale(.6);opacity:.9}100%{transform:scale(1.9);opacity:0}}
+@keyframes brainIn{0%{transform:scale(.4) rotate(-20deg);opacity:0}100%{transform:none;opacity:1}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+@media (prefers-reduced-motion:reduce){.brain img,.ring{animation:none!important}.ring{display:none}}
 .hero h1{font-family:var(--display);font-weight:700;color:var(--ivory);font-size:clamp(2.2rem,4.1vw,3.6rem);line-height:1.04;letter-spacing:-.02em;text-wrap:balance}
 .hero h1 em{font-family:"Cormorant Garamond",serif;font-style:italic;font-weight:500;color:var(--gold2)}
 .h-sub{margin-top:22px;font-size:1.12rem;font-weight:300;color:#eadfe6;max-width:560px}
@@ -290,20 +302,24 @@ footer a:hover{color:var(--gold2)}
   <div class="hero-card">
     <span class="blob hb1"></span><span class="blob hb2"></span><span class="blob hb3"></span>
     <div class="h-text">
-      <p class="h-k"><img src="../img/icon.png" alt=""><span class="es">Mindful Wellness · Para organizaciones</span><span class="en">Mindful Wellness · For organizations</span></p>
+      <canvas id="neural" aria-hidden="true"></canvas>
+      <div class="h-top">
+        <div class="brain" aria-hidden="true"><span class="ring"></span><span class="ring r2"></span><span class="ring r3"></span><img src="../img/icon.png" alt=""></div>
+        <p class="h-k"><span class="es">Mindful Wellness · Para organizaciones</span><span class="en">Mindful Wellness · For organizations</span></p>
+      </div>
       <h1>
         <span class="es">Capacitación bilingüe que transforma cómo tu equipo <em>atiende, lidera y se cuida.</em></span>
         <span class="en">Bilingual training that transforms how your team <em>serves, leads and thrives.</em></span>
       </h1>
       <p class="h-sub">
-        <span class="es">Programas en español e inglés para organizaciones de salud, servicios comunitarios, hospitalidad y atención al cliente que atienden o emplean a la comunidad hispana. Diseñados y facilitados por Mónica Villalba, con más de 25 años de experiencia.</span>
-        <span class="en">Spanish and English programs for health care, community services, hospitality and customer service organizations that serve or employ the Hispanic community. Designed and delivered by Mónica Villalba, with more than 25 years of experience.</span>
+        <span class="es">Programas en inglés y en español para equipos de salud, servicios comunitarios, hospitalidad y atención al cliente, de cualquier origen. Diseñados y facilitados por Mónica Villalba, con más de 25 años de experiencia.</span>
+        <span class="en">English and Spanish programs for health care, community services, hospitality and customer service teams of any background. Designed and delivered by Mónica Villalba, with more than 25 years of experience.</span>
       </p>
       <div class="h-cta">
         <a class="btn btn-gold" href="#contacto"><span class="es">Agenda una llamada de 20 minutos</span><span class="en">Book a 20-minute call</span> →</a>
         <a class="btn btn-ghost" href="#programas"><span class="es">Ver programas</span><span class="en">See programs</span></a>
       </div>
-      <p class="h-note"><span class="es">Presencial en New Jersey y Nueva York · Virtual en todo EE. UU.</span><span class="en">On-site in New Jersey and New York · Virtual nationwide</span></p>
+      <p class="h-note"><span class="es">Especialidad en equipos diversos y en la comunidad hispana · Presencial en NJ y NY · Virtual en todo EE. UU.</span><span class="en">Specialized in diverse teams and the Hispanic community · On-site in NJ and NY · Virtual nationwide</span></p>
     </div>
     <div class="h-photo"><img src="../img/conferencia-grupo.jpg" alt="Mónica Villalba facilitando una capacitación para un grupo de profesionales" fetchpriority="high"></div>
   </div>
@@ -326,7 +342,7 @@ footer a:hover{color:var(--gold2)}
     <div class="rv">
       <p class="eyebrow"><span class="es">El reto</span><span class="en">The challenge</span></p>
       <h2><span class="es">Tu equipo hace su mejor esfuerzo. Pero el idioma, la cultura y el desgaste se interponen.</span><span class="en">Your team does its best. But language, culture and burnout get in the way.</span></h2>
-      <p class="lead" style="margin-top:20px"><span class="es">Cuando una organización atiende o emplea a la comunidad hispana, la formación genérica no basta. Se necesita a alguien que conozca a esa comunidad desde dentro y que sepa convertir la capacitación en cambios visibles.</span><span class="en">When an organization serves or employs the Hispanic community, generic training isn't enough. You need someone who knows that community from the inside and knows how to turn training into visible change.</span></p>
+      <p class="lead" style="margin-top:20px"><span class="es">Hoy los equipos atienden a clientes y pacientes de muchas culturas, y la formación genérica no basta. Se necesita a alguien que entienda a las personas, en inglés y en español, y que sepa convertir la capacitación en cambios visibles.</span><span class="en">Today's teams serve customers and patients from many cultures, and generic training isn't enough. You need someone who understands people, in English and in Spanish, and knows how to turn training into visible change.</span></p>
     </div>
     <div class="ch-list rv">
       <div class="ch"><i>01</i><div><h3><span class="es">Clientes y pacientes que no se sienten comprendidos</span><span class="en">Customers and patients who don't feel understood</span></h3><p><span class="es">Barreras de idioma y cultura que generan quejas, citas perdidas y clientes que no regresan.</span><span class="en">Language and cultural barriers that lead to complaints, missed appointments and customers who don't come back.</span></p></div></div>
@@ -345,10 +361,10 @@ footer a:hover{color:var(--gold2)}
       <h2><span class="es">Organizaciones donde las personas son el servicio</span><span class="en">Organizations where people are the service</span></h2>
     </div>
     <div class="ind-grid rv">
-      <div class="in"><h3><span class="es">Salud</span><span class="en">Health care</span></h3><p><span class="es">Personal clínico, administrativo y de recepción que atiende a pacientes hispanos.</span><span class="en">Clinical, administrative and front-desk staff serving Hispanic patients.</span></p><ul><li><span class="es">Hospitales y clínicas</span><span class="en">Hospitals and clinics</span></li><li><span class="es">Centros de salud comunitarios</span><span class="en">Community health centers</span></li><li><span class="es">Programas de CHWs y navegación</span><span class="en">CHW and navigation programs</span></li></ul></div>
+      <div class="in"><h3><span class="es">Salud</span><span class="en">Health care</span></h3><p><span class="es">Personal clínico, administrativo y de recepción que atiende a pacientes de todas las culturas.</span><span class="en">Clinical, administrative and front-desk staff serving patients of every background.</span></p><ul><li><span class="es">Hospitales y clínicas</span><span class="en">Hospitals and clinics</span></li><li><span class="es">Centros de salud comunitarios</span><span class="en">Community health centers</span></li><li><span class="es">Programas de CHWs y navegación</span><span class="en">CHW and navigation programs</span></li></ul></div>
       <div class="in"><h3><span class="es">Servicios comunitarios</span><span class="en">Community services</span></h3><p><span class="es">Organizaciones sin fines de lucro y agencias que acompañan a familias e inmigrantes.</span><span class="en">Nonprofits and agencies that support families and immigrants.</span></p><ul><li><span class="es">Organizaciones sin fines de lucro</span><span class="en">Nonprofits</span></li><li><span class="es">Desarrollo laboral y educación de adultos</span><span class="en">Workforce development and adult education</span></li><li><span class="es">Gobierno local y programas sociales</span><span class="en">Local government and social programs</span></li></ul></div>
-      <div class="in"><h3><span class="es">Hospitalidad</span><span class="en">Hospitality</span></h3><p><span class="es">Equipos bilingües cuya actitud y servicio definen la experiencia del huésped.</span><span class="en">Bilingual teams whose attitude and service define the guest experience.</span></p><ul><li><span class="es">Hoteles</span><span class="en">Hotels</span></li><li><span class="es">Restaurantes y catering</span><span class="en">Restaurants and catering</span></li><li><span class="es">Eventos y turismo</span><span class="en">Events and tourism</span></li></ul></div>
-      <div class="in"><h3><span class="es">Servicios y atención al cliente</span><span class="en">Services and customer care</span></h3><p><span class="es">Empresas que venden, atienden y fidelizan clientes hispanos.</span><span class="en">Companies that sell to, serve and retain Hispanic customers.</span></p><ul><li><span class="es">Comercio y ventas</span><span class="en">Retail and sales</span></li><li><span class="es">Bancos, seguros y servicios financieros</span><span class="en">Banking, insurance and financial services</span></li><li><span class="es">Centros de atención y oficinas</span><span class="en">Contact centers and offices</span></li></ul></div>
+      <div class="in"><h3><span class="es">Hospitalidad</span><span class="en">Hospitality</span></h3><p><span class="es">Equipos cuya actitud y servicio definen la experiencia del huésped.</span><span class="en">Teams whose attitude and service define the guest experience.</span></p><ul><li><span class="es">Hoteles</span><span class="en">Hotels</span></li><li><span class="es">Restaurantes y catering</span><span class="en">Restaurants and catering</span></li><li><span class="es">Eventos y turismo</span><span class="en">Events and tourism</span></li></ul></div>
+      <div class="in"><h3><span class="es">Servicios y atención al cliente</span><span class="en">Services and customer care</span></h3><p><span class="es">Empresas que venden, atienden y fidelizan clientes de todas las culturas.</span><span class="en">Companies that sell to, serve and retain customers of every background.</span></p><ul><li><span class="es">Comercio y ventas</span><span class="en">Retail and sales</span></li><li><span class="es">Bancos, seguros y servicios financieros</span><span class="en">Banking, insurance and financial services</span></li><li><span class="es">Centros de atención y oficinas</span><span class="en">Contact centers and offices</span></li></ul></div>
     </div>
   </div>
 </section>
@@ -458,7 +474,7 @@ footer a:hover{color:var(--gold2)}
     <div class="rv">
       <p class="eyebrow"><span class="es">Conferencia insignia</span><span class="en">Signature keynote</span></p>
       <blockquote><span class="es">“Servir a la comunidad hispana: lo que tu equipo no sabe que no sabe”</span><span class="en">“Serving the Hispanic community: what your team doesn't know it doesn't know”</span></blockquote>
-      <p><span class="es">Una conferencia para cámaras de comercio, asociaciones y equipos directivos que quieren entender a uno de los mercados de mayor crecimiento en Estados Unidos.</span><span class="en">A keynote for chambers of commerce, associations and leadership teams that want to understand one of the fastest-growing markets in the United States.</span></p>
+      <p><span class="es">Una conferencia para cámaras de comercio, asociaciones y equipos directivos que quieren entender a uno de los mercados de mayor crecimiento en Estados Unidos. También ofrecemos conferencias sobre bienestar laboral, liderazgo y servicio para cualquier audiencia.</span><span class="en">A keynote for chambers of commerce, associations and leadership teams that want to understand one of the fastest-growing markets in the United States. We also offer keynotes on workplace well-being, leadership and service for any audience.</span></p>
       <ul>
         <li><span class="es">Las expectativas culturales que definen una buena experiencia</span><span class="en">The cultural expectations that define a good experience</span></li>
         <li><span class="es">Los errores más comunes que alejan a clientes y pacientes</span><span class="en">The most common mistakes that push customers and patients away</span></li>
@@ -534,7 +550,7 @@ footer a:hover{color:var(--gold2)}
       <h2><span class="es">Antes de empezar</span><span class="en">Before we start</span></h2>
     </div>
     <div class="faq-list">
-      <details><summary><span class="es">¿En qué idiomas se imparten los programas?</span><span class="en">What languages are programs delivered in?</span></summary><p><span class="es">En español, en inglés o en formato bilingüe, según la composición de tu equipo.</span><span class="en">In Spanish, English or a bilingual format, depending on your team.</span></p></details>
+      <details><summary><span class="es">¿En qué idiomas se imparten los programas?</span><span class="en">What languages are programs delivered in?</span></summary><p><span class="es">En inglés, en español o en formato bilingüe, para equipos de cualquier origen. Muchos programas se dictan completamente en inglés.</span><span class="en">In English, Spanish or a bilingual format, for teams of any background. Many programs are delivered entirely in English.</span></p></details>
       <details><summary><span class="es">¿Dónde trabajan?</span><span class="en">Where do you work?</span></summary><p><span class="es">Presencialmente en New Jersey y en el área de Nueva York. Virtualmente en cualquier lugar de Estados Unidos.</span><span class="en">On-site in New Jersey and the New York area. Virtually anywhere in the United States.</span></p></details>
       <details><summary><span class="es">¿Cuánto cuesta un programa?</span><span class="en">How much does a program cost?</span></summary><p><span class="es">Depende del formato, la duración y el número de participantes. Después de la llamada inicial te enviamos una propuesta con alcance, calendario e inversión.</span><span class="en">It depends on the format, length and number of participants. After the first call we send you a proposal with scope, schedule and investment.</span></p></details>
       <details><summary><span class="es">¿Pueden adaptar el contenido a nuestro sector?</span><span class="en">Can you adapt the content to our industry?</span></summary><p><span class="es">Sí. Cada programa se ajusta con ejemplos, casos y ejercicios basados en la realidad de tu organización.</span><span class="en">Yes. Every program is adjusted with examples, cases and exercises based on your organization's reality.</span></p></details>
@@ -659,6 +675,40 @@ footer a:hover{color:var(--gold2)}
     st.textContent=en?'Your email app will open with your request ready to send. If it doesn\'t, write to mvillalba@mindfulbymonica.com.':'Se abrirá tu correo con la solicitud lista para enviar. Si no se abre, escríbenos a mvillalba@mindfulbymonica.com.';
   });
   document.getElementById('yr').textContent=new Date().getFullYear();
+  // red de conexiones hacia el logo
+  var c=document.getElementById('neural'); if(!c||!c.getContext) return;
+  var ctx=c.getContext('2d'), dpr=Math.min(window.devicePixelRatio||1,2), W=0,H=0,nodes=[],cx=0,cy=0;
+  var still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  var brainEl=document.querySelector('.brain'), cols=['231,211,166','178,86,167','117,211,117','215,127,185'];
+  function size(){
+    var r=c.getBoundingClientRect(); W=r.width; H=r.height; c.width=W*dpr; c.height=H*dpr; ctx.setTransform(dpr,0,0,dpr,0,0);
+    var b=brainEl.getBoundingClientRect(); cx=b.left-r.left+b.width/2; cy=b.top-r.top+b.height/2;
+    var P=W<560?[[.55,.04],[.8,.07],[.95,.15],[.94,.4],[.96,.66],[.9,.92]]:[[.42,.05],[.62,.08],[.82,.05],[.95,.14],[.97,.36],[.93,.58],[.97,.8],[.88,.95]];
+    nodes=[]; for(var i=0;i<P.length;i++){var x=P[i][0]*W,y=P[i][1]*H;nodes.push({bx:x,by:y,x:x,y:y,ph:i*1.7,r:(i%3===0?4.4:3),c:cols[i%cols.length],u:((i*29)%100)/100,sp:.004+((i*7)%10)/2600,wait:0,bend:.12+((i*5)%7)/60});}
+  }
+  function ctrl(n){var mx=(n.x+cx)/2,my=(n.y+cy)/2,dx=cx-n.x,dy=cy-n.y;return [mx-dy*n.bend,my+dx*n.bend];}
+  function pt(n,u){var q=ctrl(n),v=1-u;return [v*v*n.x+2*v*u*q[0]+u*u*cx,v*v*n.y+2*v*u*q[1]+u*u*cy];}
+  var born=performance.now(),glow=0;
+  function frame(now){
+    var t=Math.min(1,(now-born)/1800),ease=1-Math.pow(1-t,3); ctx.clearRect(0,0,W,H);
+    for(var i=0;i<nodes.length;i++){var n=nodes[i];n.x=n.bx+Math.sin(now/1900+n.ph)*6;n.y=n.by+Math.cos(now/2300+n.ph)*5;}
+    ctx.lineWidth=1;
+    for(var i=0;i<nodes.length-1;i++){var a=nodes[i],b=nodes[i+1];ctx.strokeStyle='rgba(253,251,248,'+(0.09*ease)+')';ctx.beginPath();ctx.moveTo(a.x,a.y);ctx.lineTo(b.x,b.y);ctx.stroke();}
+    for(var i=0;i<nodes.length;i++){var n=nodes[i];
+      ctx.strokeStyle='rgba('+n.c+','+(0.16*ease)+')';ctx.beginPath();ctx.moveTo(n.x,n.y);
+      var steps=24,upto=Math.max(1,Math.round(steps*ease));for(var k=1;k<=upto;k++){var Q=pt(n,k/steps);ctx.lineTo(Q[0],Q[1]);}ctx.stroke();
+      if(t>=1&&!still){if(n.wait>0){n.wait--;}else{n.u+=n.sp;if(n.u>=1){n.u=0;n.wait=50+((i*31)%90);glow=1;}}
+        if(n.wait===0){var Q=pt(n,n.u),g=ctx.createRadialGradient(Q[0],Q[1],0,Q[0],Q[1],9);g.addColorStop(0,'rgba('+n.c+',0.95)');g.addColorStop(1,'rgba('+n.c+',0)');ctx.fillStyle=g;ctx.beginPath();ctx.arc(Q[0],Q[1],9,0,6.283);ctx.fill();}}
+      var h=ctx.createRadialGradient(n.x,n.y,0,n.x,n.y,n.r*4.5);h.addColorStop(0,'rgba('+n.c+','+(0.35*ease)+')');h.addColorStop(1,'rgba('+n.c+',0)');
+      ctx.fillStyle=h;ctx.beginPath();ctx.arc(n.x,n.y,n.r*4.5,0,6.283);ctx.fill();
+      ctx.fillStyle='rgba('+n.c+','+ease+')';ctx.beginPath();ctx.arc(n.x,n.y,n.r,0,6.283);ctx.fill();}
+    if(glow>0){var G=ctx.createRadialGradient(cx,cy,0,cx,cy,90);G.addColorStop(0,'rgba(231,211,166,'+(0.25*glow)+')');G.addColorStop(1,'rgba(231,211,166,0)');ctx.fillStyle=G;ctx.beginPath();ctx.arc(cx,cy,90,0,6.283);ctx.fill();glow=Math.max(0,glow-0.025);}
+    if(!document.hidden&&(!still||t<1))requestAnimationFrame(frame);
+  }
+  size(); requestAnimationFrame(frame);
+  window.addEventListener('resize',size);
+  document.addEventListener('visibilitychange',function(){if(!document.hidden&&!still)requestAnimationFrame(frame);});
+
 })();
 </script>
 </body>
