@@ -292,7 +292,7 @@ footer a:hover{color:var(--gold2)}
   .ct-card{padding:64px 0}
 }
 </style>
-<style>.f-price{display:block;margin:6px 0 8px;font-style:normal;font-weight:700;color:var(--gold2,#C9A45C);font-size:.95rem}.inv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.inv>div{background:rgba(201,164,92,.12);border:1px solid rgba(231,211,166,.45);border-radius:22px;padding:22px 24px;color:var(--ivory)}.inv b{display:block;margin-bottom:8px;font:700 1.05rem var(--display);color:var(--gold2)}.inv p{margin:0;font-size:.95rem;color:var(--ivory);opacity:.9}.inv strong{color:var(--gold2)}@media(max-width:800px){.inv{grid-template-columns:1fr}}</style>
+<style>.f-cta{display:inline-block;margin-top:10px;font-weight:700;color:var(--wine,#4E1A38);text-decoration:none;border-bottom:1.5px solid currentColor}.p-cta{margin-top:16px}.inv-d{margin-top:32px;background:#FCF8F1;border:1px solid #E7DCCD;border-radius:20px;padding:18px 24px}.inv-d>summary{cursor:pointer;font-weight:700;font-size:1.1rem;color:var(--wine,#4E1A38);list-style:none}.inv-d>summary::-webkit-details-marker{display:none}.inv-d>summary:after{content:" +"}.inv-d[open]>summary:after{content:" −"}.inv-d .inv>div{background:#fff!important;border:1px solid #E7DCCD!important}.inv-d .inv p,.inv-d .inv span{color:#4A3A44!important}.inv-d .inv b{color:#4E1A38!important}.inv-d .inv strong{color:#7A3B63!important}.inv-l{list-style:none;padding:0;margin:16px 0 0;display:grid;grid-template-columns:repeat(2,1fr);gap:10px 24px}.inv-l li{color:#2E2228;font-size:.95rem}.inv-l b{display:block;color:var(--wine,#4E1A38)}@media(max-width:640px){.inv-l{grid-template-columns:1fr}}.f-price{display:block;margin:6px 0 8px;font-style:normal;font-weight:700;color:var(--gold2,#C9A45C);font-size:.95rem}.inv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}.inv>div{background:rgba(201,164,92,.12);border:1px solid rgba(231,211,166,.45);border-radius:22px;padding:22px 24px;color:var(--ivory)}.inv b{display:block;margin-bottom:8px;font:700 1.05rem var(--display);color:var(--gold2)}.inv p{margin:0;font-size:.95rem;color:var(--ivory);opacity:.9}.inv strong{color:var(--gold2)}@media(max-width:800px){.inv{grid-template-columns:1fr}}</style>
 </head>
 <body>
 
@@ -309,7 +309,7 @@ footer a:hover{color:var(--gold2)}
     </ul>
     <div class="nav-r">
       <div class="lang" role="group" aria-label="Idioma / Language"><button type="button" data-set="es" aria-pressed="true">ES</button><button type="button" data-set="en" aria-pressed="false">EN</button></div>
-      <a class="btn btn-wine" href="#contacto"><span class="es">Solicita una propuesta</span><span class="en">Request a proposal</span></a>
+      <a class="btn btn-wine" href="#contacto" data-form="propuesta"><span class="es">Solicita una propuesta</span><span class="en">Request a proposal</span></a>
       <button class="burger" type="button" aria-controls="menu" aria-expanded="false"><span class="es">Menú</span><span class="en">Menu</span></button>
     </div>
   </div>
@@ -336,7 +336,7 @@ footer a:hover{color:var(--gold2)}
         <span class="en">English and Spanish programs for health care, community services, hospitality and customer service teams of any background. Designed and delivered by Mónica Villalba, with more than 25 years of experience.</span>
       </p>
       <div class="h-cta">
-        <a class="btn btn-gold" href="#contacto"><span class="es">Agenda una llamada de 20 minutos</span><span class="en">Book a 20-minute call</span> →</a>
+        <a class="btn btn-gold" href="#contacto" data-form="propuesta"><span class="es">Agenda una llamada de 20 minutos</span><span class="en">Book a 20-minute call</span> →</a>
         <a class="btn btn-ghost" href="#programas"><span class="es">Ver programas</span><span class="en">See programs</span></a>
         <a class="btn btn-ghost" href="capacidades.pdf" download><span class="es">Hoja de capacidades (PDF)</span><span class="en">Capability statement (PDF)</span></a>
       </div>
@@ -411,6 +411,7 @@ footer a:hover{color:var(--gold2)}
           <h4><span class="es">Temas</span><span class="en">Topics</span></h4>
           <ul><li><span class="es">Comunicación asertiva y escucha activa</span><span class="en">Assertive communication and active listening</span></li><li><span class="es">Manejo de quejas y clientes difíciles</span><span class="en">Complaint handling and difficult customers</span></li><li><span class="es">Ventas y fidelización con sensibilidad cultural</span><span class="en">Culturally aware sales and retention</span></li></ul>
           <p class="out"><span class="es">Resultado: mejor experiencia del cliente y menos quejas.</span><span class="en">Outcome: better customer experience and fewer complaints.</span></p>
+          <a class="btn btn-wine p-cta" href="#contacto" data-form="p-servicio"><span class="es">Quiero este programa</span><span class="en">I want this program</span></a>
         </div>
       </article>
       <article class="p rv">
@@ -424,6 +425,7 @@ footer a:hover{color:var(--gold2)}
           <h4><span class="es">Temas</span><span class="en">Topics</span></h4>
           <ul><li><span class="es">Entrevista motivacional y cambio de hábitos</span><span class="en">Motivational interviewing and habit change</span></li><li><span class="es">Atención multicultural y humildad cultural</span><span class="en">Multicultural care and cultural humility</span></li><li><span class="es">Formación de CHWs y de formadores</span><span class="en">CHW and train-the-trainer programs</span></li></ul>
           <p class="out"><span class="es">Resultado: pacientes más comprometidos con su cuidado.</span><span class="en">Outcome: patients more engaged in their care.</span></p>
+          <a class="btn btn-wine p-cta" href="#contacto" data-form="p-salud"><span class="es">Quiero este programa</span><span class="en">I want this program</span></a>
         </div>
       </article>
       <article class="p rv">
@@ -437,6 +439,7 @@ footer a:hover{color:var(--gold2)}
           <h4><span class="es">Temas</span><span class="en">Topics</span></h4>
           <ul><li><span class="es">Manejo del estrés y prevención del agotamiento</span><span class="en">Stress management and burnout prevention</span></li><li><span class="es">Hábitos saludables en el trabajo</span><span class="en">Healthy habits at work</span></li><li><span class="es">Bienestar financiero para empleados</span><span class="en">Financial wellness for employees</span></li></ul>
           <p class="out"><span class="es">Resultado: un equipo con más energía y compromiso.</span><span class="en">Outcome: a more energized, engaged team.</span></p>
+          <a class="btn btn-wine p-cta" href="#contacto" data-form="p-bienestar"><span class="es">Quiero este programa</span><span class="en">I want this program</span></a>
         </div>
       </article>
       <article class="p rv">
@@ -450,6 +453,7 @@ footer a:hover{color:var(--gold2)}
           <h4><span class="es">Temas</span><span class="en">Topics</span></h4>
           <ul><li><span class="es">Manejo de conflictos y negociación</span><span class="en">Conflict management and negotiation</span></li><li><span class="es">Trabajo en equipo y productividad</span><span class="en">Teamwork and productivity</span></li><li><span class="es">Coaching individual para líderes</span><span class="en">One-on-one leadership coaching</span></li></ul>
           <p class="out"><span class="es">Resultado: líderes más seguros y equipos más estables.</span><span class="en">Outcome: more confident leaders and more stable teams.</span></p>
+          <a class="btn btn-wine p-cta" href="#contacto" data-form="p-liderazgo"><span class="es">Quiero este programa</span><span class="en">I want this program</span></a>
         </div>
       </article>
       <article class="p rv">
@@ -463,6 +467,7 @@ footer a:hover{color:var(--gold2)}
           <h4><span class="es">Incluye</span><span class="en">Includes</span></h4>
           <ul><li><span class="es">Diagnóstico y diseño del currículo</span><span class="en">Needs assessment and curriculum design</span></li><li><span class="es">Preparación laboral: hoja de vida y entrevistas</span><span class="en">Job readiness: résumés and interviews</span></li><li><span class="es">Indicadores y seguimiento de participantes</span><span class="en">Metrics and participant tracking</span></li></ul>
           <p class="out"><span class="es">Resultado: participantes listos para el empleo.</span><span class="en">Outcome: participants ready for employment.</span></p>
+          <a class="btn btn-wine p-cta" href="#contacto" data-form="p-laboral"><span class="es">Quiero este programa</span><span class="en">I want this program</span></a>
         </div>
       </article>
     </div>
@@ -479,13 +484,13 @@ footer a:hover{color:var(--gold2)}
       <p class="lead" style="margin-top:16px"><span class="es">Presencial, virtual o híbrido. En español, en inglés o bilingüe.</span><span class="en">On-site, virtual or hybrid. In Spanish, English or both.</span></p>
     </div>
     <div class="f-grid rv">
-      <div class="f"><b><span class="es">Conferencia</span><span class="en">Keynote</span></b><small>45–60 min</small><em class="f-price"><span class="es">Desde $750</span><span class="en">From $750</span></em><p><span class="es">Para eventos internos, congresos y asociaciones. Inspira y deja ideas para aplicar.</span><span class="en">For internal events, conferences and associations. Inspires and leaves ideas to apply.</span></p></div>
-      <div class="f"><b><span class="es">Taller práctico</span><span class="en">Hands-on workshop</span></b><small>90 min – 3 h</small><em class="f-price"><span class="es">Desde $1,500 · día completo desde $2,500</span><span class="en">From $1,500 · full day from $2,500</span></em><p><span class="es">Ejercicios con situaciones reales y herramientas para usar desde el día siguiente.</span><span class="en">Exercises based on real situations and tools to use the very next day.</span></p></div>
-      <div class="f"><b><span class="es">Serie de formación</span><span class="en">Training series</span></b><small><span class="es">4–6 semanas</span><span class="en">4–6 weeks</span></small><em class="f-price"><span class="es">Desde $4,500 por serie</span><span class="en">From $4,500 per series</span></em><p><span class="es">Sesiones semanales con práctica y seguimiento para un cambio que perdure.</span><span class="en">Weekly sessions with practice and follow-up for lasting change.</span></p></div>
-      <div class="f"><b><span class="es">Formación de formadores</span><span class="en">Train-the-trainer</span></b><small><span class="es">A medida</span><span class="en">Custom</span></small><em class="f-price"><span class="es">Cotización a medida</span><span class="en">Custom quote</span></em><p><span class="es">Preparamos a tu personal para replicar la formación dentro de la organización.</span><span class="en">We prepare your staff to deliver the training inside your organization.</span></p></div>
-      <div class="f"><b><span class="es">Coaching para líderes</span><span class="en">Leadership coaching</span></b><small><span class="es">Individual o grupal</span><span class="en">One-on-one or group</span></small><em class="f-price"><span class="es">Cotización a medida</span><span class="en">Custom quote</span></em><p><span class="es">Acompañamiento cercano para gerentes y supervisores.</span><span class="en">Close support for managers and supervisors.</span></p></div>
-      <div class="f"><b><span class="es">Consultoría y diseño</span><span class="en">Consulting and design</span></b><small><span class="es">Por proyecto</span><span class="en">Per project</span></small><em class="f-price"><span class="es">Cotización por proyecto</span><span class="en">Per-project quote</span></em><p><span class="es">Diseño de programas, currículos y materiales listos para implementar.</span><span class="en">Program, curriculum and material design ready to implement.</span></p></div>
-    </div><div class="inv rv"><div><b><span class="es">Oferta piloto</span><span class="en">Pilot offer</span></b><p><span class="es">Taller de medio día por <strong>$950</strong> para las primeras 3 organizaciones, a cambio de un testimonio. Válido hasta el 31 de enero de 2027.</span><span class="en">Half-day workshop for <strong>$950</strong> for the first 3 organizations, in exchange for a testimonial. Valid through January 31, 2027.</span></p></div><div><b><span class="es">Organizaciones sin fines de lucro</span><span class="en">Nonprofits</span></b><p><span class="es"><strong>15% de descuento</strong> en todos los formatos.</span><span class="en"><strong>15% off</strong> all formats.</span></p></div><div><b><span class="es">Qué incluye</span><span class="en">What's included</span></b><p><span class="es">Diagnóstico previo, materiales bilingües, evaluación de resultados e informe final. Viáticos fuera de NJ/NY se cotizan aparte.</span><span class="en">Needs assessment, bilingual materials, outcome evaluation and a final report. Travel outside NJ/NY quoted separately.</span></p></div></div>
+      <div class="f"><b><span class="es">Conferencia</span><span class="en">Keynote</span></b><small>45–60 min</small><p><span class="es">Para eventos internos, congresos y asociaciones. Inspira y deja ideas para aplicar.</span><span class="en">For internal events, conferences and associations. Inspires and leaves ideas to apply.</span></p><a class="f-cta" href="#contacto" data-form="invitar"><span class="es">Solicitar información →</span><span class="en">Request info →</span></a></div>
+      <div class="f"><b><span class="es">Taller práctico</span><span class="en">Hands-on workshop</span></b><small>90 min – 3 h</small><p><span class="es">Ejercicios con situaciones reales y herramientas para usar desde el día siguiente.</span><span class="en">Exercises based on real situations and tools to use the very next day.</span></p><a class="f-cta" href="#contacto" data-form="taller"><span class="es">Solicitar información →</span><span class="en">Request info →</span></a></div>
+      <div class="f"><b><span class="es">Serie de formación</span><span class="en">Training series</span></b><small><span class="es">4–6 semanas</span><span class="en">4–6 weeks</span></small><p><span class="es">Sesiones semanales con práctica y seguimiento para un cambio que perdure.</span><span class="en">Weekly sessions with practice and follow-up for lasting change.</span></p><a class="f-cta" href="#contacto" data-form="serie"><span class="es">Solicitar información →</span><span class="en">Request info →</span></a></div>
+      <div class="f"><b><span class="es">Formación de formadores</span><span class="en">Train-the-trainer</span></b><small><span class="es">A medida</span><span class="en">Custom</span></small><p><span class="es">Preparamos a tu personal para replicar la formación dentro de la organización.</span><span class="en">We prepare your staff to deliver the training inside your organization.</span></p><a class="f-cta" href="#contacto" data-form="formadores"><span class="es">Solicitar información →</span><span class="en">Request info →</span></a></div>
+      <div class="f"><b><span class="es">Coaching para líderes</span><span class="en">Leadership coaching</span></b><small><span class="es">Individual o grupal</span><span class="en">One-on-one or group</span></small><p><span class="es">Acompañamiento cercano para gerentes y supervisores.</span><span class="en">Close support for managers and supervisors.</span></p><a class="f-cta" href="#contacto" data-form="coaching-lideres"><span class="es">Solicitar información →</span><span class="en">Request info →</span></a></div>
+      <div class="f"><b><span class="es">Consultoría y diseño</span><span class="en">Consulting and design</span></b><small><span class="es">Por proyecto</span><span class="en">Per project</span></small><p><span class="es">Diseño de programas, currículos y materiales listos para implementar.</span><span class="en">Program, curriculum and material design ready to implement.</span></p><a class="f-cta" href="#contacto" data-form="consultoria"><span class="es">Solicitar información →</span><span class="en">Request info →</span></a></div>
+    </div><details class="inv-d rv"><summary><span class="es">¿Cuál es la inversión?</span><span class="en">What is the investment?</span></summary><ul class="inv-l"><li><b><span class="es">Conferencia</span><span class="en">Keynote</span></b> <span class="es">Desde $750</span><span class="en">From $750</span></li><li><b><span class="es">Taller práctico</span><span class="en">Hands-on workshop</span></b> <span class="es">Desde $1,500 · día completo desde $2,500</span><span class="en">From $1,500 · full day from $2,500</span></li><li><b><span class="es">Serie de formación</span><span class="en">Training series</span></b> <span class="es">Desde $4,500 por serie</span><span class="en">From $4,500 per series</span></li><li><b><span class="es">Formación de formadores</span><span class="en">Train-the-trainer</span></b> <span class="es">Cotización a medida</span><span class="en">Custom quote</span></li><li><b><span class="es">Coaching para líderes</span><span class="en">Leadership coaching</span></b> <span class="es">Cotización a medida</span><span class="en">Custom quote</span></li><li><b><span class="es">Consultoría y diseño</span><span class="en">Consulting and design</span></b> <span class="es">Cotización por proyecto</span><span class="en">Per-project quote</span></li><li><b><span class="es">Programa continuo de inducción</span><span class="en">Ongoing onboarding program</span></b> <span class="es">Desde $1,500 por trimestre</span><span class="en">From $1,500 per quarter</span></li></ul><div class="inv"><div><b><span class="es">Oferta piloto</span><span class="en">Pilot offer</span></b><p><span class="es">Taller de medio día por <strong>$950</strong> para las primeras 3 organizaciones, a cambio de un testimonio. Válido hasta el 31 de enero de 2027.</span><span class="en">Half-day workshop for <strong>$950</strong> for the first 3 organizations, in exchange for a testimonial. Valid through January 31, 2027.</span></p></div><div><b><span class="es">Organizaciones sin fines de lucro</span><span class="en">Nonprofits</span></b><p><span class="es"><strong>15% de descuento</strong> en todos los formatos.</span><span class="en"><strong>15% off</strong> all formats.</span></p></div><div><b><span class="es">Qué incluye</span><span class="en">What's included</span></b><p><span class="es">Diagnóstico previo, materiales bilingües, evaluación de resultados e informe final. Viáticos fuera de NJ/NY se cotizan aparte.</span><span class="en">Needs assessment, bilingual materials, outcome evaluation and a final report. Travel outside NJ/NY quoted separately.</span></p></div></div><p style="margin-top:18px"><a class="btn btn-gold" href="#contacto" data-form="propuesta"><span class="es">Solicita una propuesta a tu medida</span><span class="en">Request a tailored proposal</span></a></p></details>
   </div>
 </section>
 
@@ -507,7 +512,7 @@ footer a:hover{color:var(--gold2)}
           <li><i>3</i><span><span class="es">Informe trimestral de asistencia, evaluación y recomendaciones</span><span class="en">Quarterly report on attendance, assessment and recommendations</span></span></li>
         </ul>
         <p class="why"><span class="es">El resultado: el personal nuevo empieza con los mismos estándares desde el primer día, y tú tienes un aliado de formación todo el año.</span><span class="en">The result: new staff start with the same standards from day one, and you have a training partner all year.</span></p>
-        <p class="f-price" style="font-size:1.05rem"><span class="es">Desde $1,500 por trimestre</span><span class="en">From $1,500 per quarter</span></p><a class="btn btn-wine" href="#contacto" data-topic="Programa de inducción continua"><span class="es">Pide información del programa continuo</span><span class="en">Ask about the ongoing program</span></a>
+        <a class="btn btn-wine" href="#contacto" data-form="continuo"><span class="es">Pide información del programa continuo</span><span class="en">Ask about the ongoing program</span></a>
         </div>
       </div>
     </div>
@@ -527,7 +532,7 @@ footer a:hover{color:var(--gold2)}
         <li><span class="es">Los errores más comunes que alejan a clientes y pacientes</span><span class="en">The most common mistakes that push customers and patients away</span></li>
         <li><span class="es">Acciones concretas que el equipo puede aplicar de inmediato</span><span class="en">Concrete actions your team can apply right away</span></li>
       </ul>
-      <a class="btn btn-wine" href="#contacto" data-topic="conferencia"><span class="es">Invita a Mónica a tu evento</span><span class="en">Invite Mónica to your event</span></a>
+      <a class="btn btn-wine" href="#contacto" data-form="invitar"><span class="es">Invita a Mónica a tu evento</span><span class="en">Invite Mónica to your event</span></a>
     </div>
   </div>
 </section>
@@ -720,6 +725,13 @@ footer a:hover{color:var(--gold2)}
     if(!f.checkValidity()){st.textContent=en?'Please complete the required fields (*) with a valid email.':'Completa los campos obligatorios (*) con un correo válido.';return;}
     var d=new FormData(f), lab={nombre:'Nombre',cargo:'Cargo',organizacion:'Organización',correo:'Correo',telefono:'Teléfono',interes:'Interés',necesidad:'Necesidad'}, lines=[];
     d.forEach(function(v,k){if(v)lines.push(lab[k]+': '+v);});
+    if(window.MWForm&&MWForm.ready()){
+      var o={lead_id:'MW-'+Date.now().toString(36).toUpperCase(),formulario:'contacto-empresas',programa:'Propuesta corporativa · '+(d.get('interes')||''),estado:'completo',idioma_web:en?'EN':'ES',pagina:location.pathname,email:d.get('correo')||'',whatsapp:d.get('telefono')||''};
+      d.forEach(function(v,k){if(k!=='correo'&&k!=='telefono')o[k]=v;});
+      MWForm.post(o); f.reset();
+      st.textContent=en?'Thank you! We received your request and will reply within 24 hours. No need to send it again.':'¡Gracias! Recibimos tu solicitud y te responderemos en menos de 24 horas. No necesitas enviarla de nuevo.';
+      return;
+    }
     location.href='mailto:mvillalba@mindfulbymonica.com?subject='+encodeURIComponent('Propuesta corporativa – '+(d.get('organizacion')||''))+'&body='+encodeURIComponent(lines.join('\n'));
     st.textContent=en?'Your email app will open with your request ready to send. If it doesn\'t, write to mvillalba@mindfulbymonica.com.':'Se abrirá tu correo con la solicitud lista para enviar. Si no se abre, escríbenos a mvillalba@mindfulbymonica.com.';
   });
@@ -760,5 +772,6 @@ footer a:hover{color:var(--gold2)}
 
 })();
 </script>
+<script src="/forms.js?v=1"></script>
 </body>
 </html>
