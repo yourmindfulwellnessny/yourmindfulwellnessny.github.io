@@ -4,7 +4,7 @@
    Paso 2: preguntas específicas del programa.
    Las respuestas van a la hoja de Google "Solicitudes Mindful Wellness". */
 (function(){
-  var ENDPOINT = "";            // URL del Apps Script (se completa al conectar la hoja)
+  var ENDPOINT = "https://script.google.com/macros/s/AKfycbz141S5kd1EB4TkI7P4qvKiPAe9HOtjvEEaZGB6x2QLbV8DkBKsr475rgEBuXXHPBz-HQ/exec"; // Apps Script "Formularios web Mindful Wellness" (v1, 18 nov 2026)
   var WA = "12016799969";
 
   function L(){ return document.documentElement.getAttribute('data-lang')==='en' ? 1 : 0; }
