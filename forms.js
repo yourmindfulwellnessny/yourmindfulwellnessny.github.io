@@ -127,7 +127,7 @@
   F['formadores'] = corp(['Formación de formadores · solicitar información','Train-the-trainer · request info'], [
     {k:'formadores', l:['¿Cuántas personas serían formadoras?','How many future trainers?'], t:'radio', o:[['1–3','1–3'],['4–8','4–8'],['Más de 8','8+']]},
     {k:'replicar', l:['¿Qué formación quieren replicar internamente?','What training do you want to deliver internally?'], t:'textarea'}]);
-  F['coaching-lideres'] = corp(['Coaching para líderes · solicitar información','Leadership coaching · request info'], [
+  F['coaching-lideres'] = corp(['Asesoría estratégica para líderes · solicitar información','Strategic leadership advisory · request info'], [
     {k:'tipo', l:['¿Individual o grupal?','One-on-one or group?'], t:'radio', o:[['Individual','One-on-one'],['Grupal','Group'],['Ambos','Both']]},
     {k:'lideres', l:['¿Cuántos líderes o supervisores?','How many leaders or supervisors?'], t:'radio', o:[['1–3','1–3'],['4–10','4–10'],['Más de 10','10+']]},
     {k:'retos', l:['Retos principales','Main challenges'], t:'multi', o:[['Comunicación','Communication'],['Conflictos','Conflict'],['Delegar','Delegation'],['Equipos diversos','Diverse teams'],['Rotación de personal','Turnover']]}]);
